@@ -1,4 +1,6 @@
-package app;
+package app.machine;
+
+import app.coffee.Coffee;
 
 public interface Machine {
 

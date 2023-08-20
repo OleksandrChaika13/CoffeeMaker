@@ -1,4 +1,4 @@
-package app;
+package app.coffee;
 
 public class Cappuccino implements Coffee{
 

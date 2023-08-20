@@ -1,5 +1,8 @@
 package app;
 
+import app.coffee.Coffee;
+import app.machine.CoffeeMachine;
+
 public class Main {
 
     public static void main(String[] args) {

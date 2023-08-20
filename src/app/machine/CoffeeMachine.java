@@ -1,4 +1,9 @@
-package app;
+package app.machine;
+
+import app.coffee.Cappuccino;
+import app.coffee.Coffee;
+import app.coffee.Espresso;
+import app.coffee.Latte;
 
 import java.util.Scanner;
 
