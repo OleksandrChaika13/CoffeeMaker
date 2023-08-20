@@ -1,0 +1,40 @@
+@startuml
+class app.coffee.Latte {
++ String getName()
++ void make()
+}
+interface app.machine.Machine {
+~ void displayMenu()
+~ int chooseDrink()
+~ void makeCoffee(Coffee)
+~ Coffee createCoffee(int)
+}
+class app.coffee.Espresso {
++ String getName()
++ void make()
+}
+class app.machine.CoffeeMachine {
+~ Scanner scanner
++ void displayMenu()
++ int chooseDrink()
++ void makeCoffee(Coffee)
++ Coffee createCoffee(int)
+}
+class app.Main {
++ {static} void main(String[])
+}
+interface app.coffee.Coffee {
+~ String getName()
+~ void make()
+}
+class app.coffee.Cappuccino {
++ String getName()
++ void make()
+}
+
+
+app.coffee.Coffee <|.. app.coffee.Latte
+app.coffee.Coffee <|.. app.coffee.Espresso
+app.machine.Machine <|.. app.machine.CoffeeMachine
+app.coffee.Coffee <|.. app.coffee.Cappuccino
+@enduml
